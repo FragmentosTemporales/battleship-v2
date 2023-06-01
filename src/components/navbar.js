@@ -7,7 +7,7 @@ function NavBar() {
     window.location.reload();
   }
   return (
-    <div className="container-fluid d-flex py-4">
+    <div className="container-fluid d-flex py-4 botonera">
       <div className="col-md-4 col-3 d-flex justify-content-start ">
         <button className="btn btn-dark">
           <Link to="/" style={{ textDecoration: "none" }}>
@@ -16,15 +16,15 @@ function NavBar() {
           </Link>
         </button>
       </div>
-      <div className="col-md-4 col-6 d-flex justify-content-around">
-        <div className="col-6"><button className="btn btn-light border border-danger w-100">
+      <div className="col-md-4 col-6 d-flex justify-content-between">
+        <div className="col-5"><button className="btn btn-light border border-danger w-100">
           <Link to="/user" style={{ textDecoration: "none", color: "red"}}>
             Jugador
           </Link>
         </button></div>
-        <div className="col-6"><button className="btn btn-danger border border-white w-100">
+        <div className="col-5 "><button className="btn btn-danger border border-white w-100">
           <Link to="/gameboard" style={{ textDecoration: "none", color: "white"}}>
-            Computador
+            CPU
           </Link>
         </button></div>
         
