@@ -243,7 +243,7 @@ const getState = ({ setStore, getActions, getStore }) => {
         // Generamos una posición aleatoria mientras no se repita en las ya ingresadas  
         do {
           const row = Math.floor(Math.random() * 9) + 1;
-          const col = Math.floor(Math.random() * 8) + 1;
+          const col = Math.floor(Math.random() * 9) + 1;
           position = row.toString() + col.toString();
         } while (cpuFires.includes(position));
 
