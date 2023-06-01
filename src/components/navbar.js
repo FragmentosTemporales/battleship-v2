@@ -8,7 +8,7 @@ function NavBar() {
   }
   return (
     <div className="container-fluid d-flex py-4">
-      <div className="col-4 d-flex justify-content-start">
+      <div className="col-md-4 col-3 d-flex justify-content-start ">
         <button className="btn btn-dark">
           <Link to="/" style={{ textDecoration: "none" }}>
             {" "}
@@ -16,19 +16,20 @@ function NavBar() {
           </Link>
         </button>
       </div>
-      <div className="col-4 d-flex justify-content-around">
-        <button className="btn btn-light border border-danger col-4">
-          <Link to="/user" style={{ textDecoration: "none", color: "red" }}>
-            Jugador 1
+      <div className="col-md-4 col-6 d-flex justify-content-around">
+        <div className="col-6"><button className="btn btn-light border border-danger w-100">
+          <Link to="/user" style={{ textDecoration: "none", color: "red"}}>
+            Jugador
           </Link>
-        </button>
-        <button className="btn btn-danger border border-white col-4">
-          <Link to="/gameboard" style={{ textDecoration: "none", color: "white" }}>
+        </button></div>
+        <div className="col-6"><button className="btn btn-danger border border-white w-100">
+          <Link to="/gameboard" style={{ textDecoration: "none", color: "white"}}>
             Computador
           </Link>
-        </button>
+        </button></div>
+        
       </div>
-      <div className="col-4 d-flex justify-content-end">
+      <div className="col-md-4 col-3 d-flex justify-content-end">
         <button className="btn btn-dark">
           <Link onClick={handleClick} style={{ textDecoration: "none" }}>
             {" "}
