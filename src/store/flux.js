@@ -224,6 +224,17 @@ const getState = ({ setStore, getActions, getStore }) => {
         });
         navigate("/");
       },
+      newGame:(navigate)=>{
+        setStore({
+          userShip: [],
+          userFires: [],
+          cpuShip: [],
+          userScore: 0,
+          cpuScore: 0,
+          cpuFires: [],
+        });
+        navigate("/user");
+      },
       //A continuación se presenta la función para definir los misiles de la CPU
       cpuFire: (navigate) => {
         const { userShip, cpuFires, cpuScore, globalCpu } = getStore();
